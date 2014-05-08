@@ -1,0 +1,10 @@
+PhantomJS is launching GhostDriver...
+[INFO  - 2014-05-08T20:52:07.398Z] GhostDriver - Main - running on port 61218
+[INFO  - 2014-05-08T20:52:07.871Z] Session [9e5d4830-d6f2-11e3-b04f-91f67ed743d2] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.7 Safari/534.34","webSecurityEnabled":true}
+[INFO  - 2014-05-08T20:52:07.871Z] Session [9e5d4830-d6f2-11e3-b04f-91f67ed743d2] - page.customHeaders:  - {}
+[INFO  - 2014-05-08T20:52:07.871Z] Session [9e5d4830-d6f2-11e3-b04f-91f67ed743d2] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"1.9.7","driverName":"ghostdriver","driverVersion":"1.1.0","platform":"windows-7-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"},"phantomjs.page.settings.loadImages":true}
+[INFO  - 2014-05-08T20:52:07.871Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 9e5d4830-d6f2-11e3-b04f-91f67ed743d2
+[ERROR - 2014-05-08T20:52:33.453Z] Session [9e5d4830-d6f2-11e3-b04f-91f67ed743d2] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'this.MV.cid')
+[ERROR - 2014-05-08T20:52:33.454Z] Session [9e5d4830-d6f2-11e3-b04f-91f67ed743d2] - page.onError - stack:
+  (anonymous function) (http://d1n1frcxojl8er.cloudfront.net/976_cbr.js:2)
+  (anonymous function) (http://d1n1frcxojl8er.cloudfront.net/976_cbr.js:24)
