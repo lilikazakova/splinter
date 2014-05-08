@@ -12,7 +12,7 @@ class TestSequenceFunctions(unittest.TestCase):
         self.browser = Browser('phantomjs')
         self.address = os.environ['recipient']
         self.subject = 'hello'
-        self.message = 'Hello!'
+        self.message = 'Hello! Testing at %s' %(time.strftime("%a, %d %b %Y %H:%M:%S +0000", time.gmtime()))
     
     def tearDown(self):
         self.browser.quit()
