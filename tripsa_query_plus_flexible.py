@@ -63,23 +63,28 @@ class TestSequenceFunctions(unittest.TestCase):
         lowest_price = browser.find_by_css('td.cheapest-price div.matrix-tooltip a').first.text[1:]
         
         browser.find_by_css('td.selected-price div.matrix-tooltip a').mouse_over()
-        dep_date_price = browser.find_by_css('td.selected-price div.matrix-tooltip div.body div.block strong').first.text
-        company_price = browser.find_by_css('td.selected-price div.matrix-tooltip div.body div.comment').text
-        dep_time_price = browser.find_by_css('td.selected-price div.matrix-tooltip div.body div.small').first.text
-        return_date_price = browser.find_by_css('td.selected-price div.matrix-tooltip div.body div.block strong').last.text
-        return_time_price = browser.find_by_css('td.selected-price div.matrix-tooltip div.body div.small').last.text
+        #dep_date_price = browser.find_by_css('td.selected-price div.matrix-tooltip div.body div.block strong').first.text
+        #company_price = browser.find_by_css('td.selected-price div.matrix-tooltip div.body div.comment').text
+        #dep_time_price = browser.find_by_css('td.selected-price div.matrix-tooltip div.body div.small').first.text
+        #return_date_price = browser.find_by_css('td.selected-price div.matrix-tooltip div.body div.block strong').last.text
+        #return_time_price = browser.find_by_css('td.selected-price div.matrix-tooltip div.body div.small').last.text
+        info_price = browser.find_by_css('td.selected-price div.matrix-tooltip div.body div.block').text
         self.make_screenshot() 
-        
+                        
         browser.find_by_css('td.cheapest-price div.matrix-tooltip a').mouse_over()
-        dep_date_lowest_price = browser.find_by_css('td.cheapest-price div.matrix-tooltip div.body div.block strong').first.text
-        company_lowest_price = browser.find_by_css('td.cheapest-price div.matrix-tooltip div.body div.comment').text
-        dep_time_lowest_price = browser.find_by_css('td.cheapest-price div.matrix-tooltip div.body div.small').first.text
-        return_date_lowest_price = browser.find_by_css('td.cheapest-price div.matrix-tooltip div.body div.block strong')[1].text
-        return_time_lowest_price = browser.find_by_css('td.cheapest-price div.matrix-tooltip div.body div.small')[1].text
-        self.make_screenshot() 
-        message_price = 'Price: %s \n %s \n %s \n %s \n %s \n %s \n' %(price, dep_date_price, dep_time_price, company_price, return_date_price, return_time_price)
-        message_lowest_price = 'Lowest price: %s \n %s \n %s \n %s \n %s \n %s' %(lowest_price, dep_date_lowest_price, dep_time_lowest_price, company_lowest_price, return_date_lowest_price, return_time_lowest_price)
-        message = 'Available Flight from %s  to %s : \n \n %s \n First cheapest flight: \n %s' %(self.location, self.destination, message_price, message_lowest_price)
+        info_lowest_price = browser.find_by_css('td.cheapest-price div.matrix-tooltip div.body div.block').text
+        for i in info_lowest_price:
+            dep_date_lowest_price = browser.find_by_css('td.cheapest-price div.matrix-tooltip div.body div.block strong').first.text
+            company_lowest_price = browser.find_by_css('td.cheapest-price div.matrix-tooltip div.body div.comment').text
+            dep_time_lowest_price = browser.find_by_css('td.cheapest-price div.matrix-tooltip div.body div.small').first.text
+            return_date_lowest_price = browser.find_by_css('td.cheapest-price div.matrix-tooltip div.body div.block strong')[1].text
+            return_time_lowest_price = browser.find_by_css('td.cheapest-price div.matrix-tooltip div.body div.small')[1].text
+            self.make_screenshot() 
+        #message_price = 'Price: %s \n %s \n %s \n %s \n %s \n %s \n' %(price, dep_date_price, dep_time_price, company_price, return_date_price, return_time_price)
+        #message_lowest_price = 'Lowest price: %s \n %s \n %s \n %s \n %s \n %s' %(lowest_price, dep_date_lowest_price, dep_time_lowest_price, company_lowest_price, return_date_lowest_price, return_time_lowest_price)
+        #message = 'Available Flight from %s  to %s : \n \n %s \n First cheapest flight: \n %s' %(self.location, self.destination, message_price, message_lowest_price)
+        
+        message = 'Available Flight from %s  to %s : \n \n %s \n \n Cheapiest flight: \n %s' %(self.location, self.destination, info_price, info_lowest_price)
         
         #browser.find_by_id('form-flights-result-0')
                 
