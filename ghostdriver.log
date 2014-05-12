@@ -1,80 +1,92 @@
 PhantomJS is launching GhostDriver...
-[INFO  - 2014-05-10T20:14:25.168Z] GhostDriver - Main - running on port 57568
-[INFO  - 2014-05-10T20:14:25.647Z] Session [aecccb30-d87f-11e3-a08e-9b3ec76076b6] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.7 Safari/534.34","webSecurityEnabled":true}
-[INFO  - 2014-05-10T20:14:25.648Z] Session [aecccb30-d87f-11e3-a08e-9b3ec76076b6] - page.customHeaders:  - {}
-[INFO  - 2014-05-10T20:14:25.648Z] Session [aecccb30-d87f-11e3-a08e-9b3ec76076b6] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"1.9.7","driverName":"ghostdriver","driverVersion":"1.1.0","platform":"windows-7-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"},"phantomjs.page.settings.loadImages":true}
-[INFO  - 2014-05-10T20:14:25.648Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: aecccb30-d87f-11e3-a08e-9b3ec76076b6
-[ERROR - 2014-05-10T20:14:58.218Z] Session [aecccb30-d87f-11e3-a08e-9b3ec76076b6] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'this.MV.cid')
-[ERROR - 2014-05-10T20:14:58.218Z] Session [aecccb30-d87f-11e3-a08e-9b3ec76076b6] - page.onError - stack:
+[INFO  - 2014-05-11T06:47:54.096Z] GhostDriver - Main - running on port 50128
+[INFO  - 2014-05-11T06:47:54.354Z] Session [2dc1ad90-d8d8-11e3-b872-1d65a2e9c40d] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.7 Safari/534.34","webSecurityEnabled":true}
+[INFO  - 2014-05-11T06:47:54.354Z] Session [2dc1ad90-d8d8-11e3-b872-1d65a2e9c40d] - page.customHeaders:  - {}
+[INFO  - 2014-05-11T06:47:54.354Z] Session [2dc1ad90-d8d8-11e3-b872-1d65a2e9c40d] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"1.9.7","driverName":"ghostdriver","driverVersion":"1.1.0","platform":"windows-7-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"},"phantomjs.page.settings.loadImages":true}
+[INFO  - 2014-05-11T06:47:54.354Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 2dc1ad90-d8d8-11e3-b872-1d65a2e9c40d
+[ERROR - 2014-05-11T06:48:18.050Z] Session [2dc1ad90-d8d8-11e3-b872-1d65a2e9c40d] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'this.MV.cid')
+[ERROR - 2014-05-11T06:48:18.050Z] Session [2dc1ad90-d8d8-11e3-b872-1d65a2e9c40d] - page.onError - stack:
   (anonymous function) (http://d1n1frcxojl8er.cloudfront.net/976_cbr.js:2)
   (anonymous function) (http://d1n1frcxojl8er.cloudfront.net/976_cbr.js:24)
-[ERROR - 2014-05-10T20:15:39.746Z] Session [aecccb30-d87f-11e3-a08e-9b3ec76076b6] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'this.MV.cid')
-[ERROR - 2014-05-10T20:15:39.746Z] Session [aecccb30-d87f-11e3-a08e-9b3ec76076b6] - page.onError - stack:
+[ERROR - 2014-05-11T06:49:04.579Z] Session [2dc1ad90-d8d8-11e3-b872-1d65a2e9c40d] - page.onError - msg: ReferenceError: Can't find variable: getUrlVars
+[ERROR - 2014-05-11T06:49:04.579Z] Session [2dc1ad90-d8d8-11e3-b872-1d65a2e9c40d] - page.onError - stack:
+  (anonymous function) (https://my.globul.bg/mg/myglobul.portal?action=loadv:166)
+[ERROR - 2014-05-11T06:49:25.462Z] Session [2dc1ad90-d8d8-11e3-b872-1d65a2e9c40d] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'this.MV.cid')
+[ERROR - 2014-05-11T06:49:25.462Z] Session [2dc1ad90-d8d8-11e3-b872-1d65a2e9c40d] - page.onError - stack:
   (anonymous function) (http://d1n1frcxojl8er.cloudfront.net/976_cbr.js:2)
   (anonymous function) (http://d1n1frcxojl8er.cloudfront.net/976_cbr.js:24)
-[ERROR - 2014-05-10T20:16:16.938Z] Session [aecccb30-d87f-11e3-a08e-9b3ec76076b6] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'this.MV.cid')
-[ERROR - 2014-05-10T20:16:16.938Z] Session [aecccb30-d87f-11e3-a08e-9b3ec76076b6] - page.onError - stack:
+[ERROR - 2014-05-11T06:49:55.361Z] Session [2dc1ad90-d8d8-11e3-b872-1d65a2e9c40d] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'this.MV.cid')
+[ERROR - 2014-05-11T06:49:55.361Z] Session [2dc1ad90-d8d8-11e3-b872-1d65a2e9c40d] - page.onError - stack:
   (anonymous function) (http://d1n1frcxojl8er.cloudfront.net/976_cbr.js:2)
   (anonymous function) (http://d1n1frcxojl8er.cloudfront.net/976_cbr.js:24)
-[ERROR - 2014-05-10T20:16:54.507Z] Session [aecccb30-d87f-11e3-a08e-9b3ec76076b6] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'this.MV.cid')
-[ERROR - 2014-05-10T20:16:54.507Z] Session [aecccb30-d87f-11e3-a08e-9b3ec76076b6] - page.onError - stack:
+[ERROR - 2014-05-11T06:50:40.282Z] Session [2dc1ad90-d8d8-11e3-b872-1d65a2e9c40d] - page.onError - msg: ReferenceError: Can't find variable: getUrlVars
+[ERROR - 2014-05-11T06:50:40.282Z] Session [2dc1ad90-d8d8-11e3-b872-1d65a2e9c40d] - page.onError - stack:
+  (anonymous function) (https://my.globul.bg/mg/myglobul.portal?action=loadv:166)
+[ERROR - 2014-05-11T06:51:01.716Z] Session [2dc1ad90-d8d8-11e3-b872-1d65a2e9c40d] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'this.MV.cid')
+[ERROR - 2014-05-11T06:51:01.717Z] Session [2dc1ad90-d8d8-11e3-b872-1d65a2e9c40d] - page.onError - stack:
   (anonymous function) (http://d1n1frcxojl8er.cloudfront.net/976_cbr.js:2)
   (anonymous function) (http://d1n1frcxojl8er.cloudfront.net/976_cbr.js:24)
-[ERROR - 2014-05-10T20:17:41.438Z] Session [aecccb30-d87f-11e3-a08e-9b3ec76076b6] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'this.MV.cid')
-[ERROR - 2014-05-10T20:17:41.439Z] Session [aecccb30-d87f-11e3-a08e-9b3ec76076b6] - page.onError - stack:
+[ERROR - 2014-05-11T06:51:32.743Z] Session [2dc1ad90-d8d8-11e3-b872-1d65a2e9c40d] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'this.MV.cid')
+[ERROR - 2014-05-11T06:51:32.744Z] Session [2dc1ad90-d8d8-11e3-b872-1d65a2e9c40d] - page.onError - stack:
   (anonymous function) (http://d1n1frcxojl8er.cloudfront.net/976_cbr.js:2)
   (anonymous function) (http://d1n1frcxojl8er.cloudfront.net/976_cbr.js:24)
-[ERROR - 2014-05-10T20:18:23.554Z] Session [aecccb30-d87f-11e3-a08e-9b3ec76076b6] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'this.MV.cid')
-[ERROR - 2014-05-10T20:18:23.555Z] Session [aecccb30-d87f-11e3-a08e-9b3ec76076b6] - page.onError - stack:
+[ERROR - 2014-05-11T06:52:06.614Z] Session [2dc1ad90-d8d8-11e3-b872-1d65a2e9c40d] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'this.MV.cid')
+[ERROR - 2014-05-11T06:52:06.615Z] Session [2dc1ad90-d8d8-11e3-b872-1d65a2e9c40d] - page.onError - stack:
   (anonymous function) (http://d1n1frcxojl8er.cloudfront.net/976_cbr.js:2)
   (anonymous function) (http://d1n1frcxojl8er.cloudfront.net/976_cbr.js:24)
-[ERROR - 2014-05-10T20:19:05.112Z] Session [aecccb30-d87f-11e3-a08e-9b3ec76076b6] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'this.MV.cid')
-[ERROR - 2014-05-10T20:19:05.113Z] Session [aecccb30-d87f-11e3-a08e-9b3ec76076b6] - page.onError - stack:
+[ERROR - 2014-05-11T06:52:38.019Z] Session [2dc1ad90-d8d8-11e3-b872-1d65a2e9c40d] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'this.MV.cid')
+[ERROR - 2014-05-11T06:52:38.019Z] Session [2dc1ad90-d8d8-11e3-b872-1d65a2e9c40d] - page.onError - stack:
   (anonymous function) (http://d1n1frcxojl8er.cloudfront.net/976_cbr.js:2)
   (anonymous function) (http://d1n1frcxojl8er.cloudfront.net/976_cbr.js:24)
-[INFO  - 2014-05-10T20:19:25.216Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[ERROR - 2014-05-10T20:19:44.191Z] Session [aecccb30-d87f-11e3-a08e-9b3ec76076b6] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'this.MV.cid')
-[ERROR - 2014-05-10T20:19:44.191Z] Session [aecccb30-d87f-11e3-a08e-9b3ec76076b6] - page.onError - stack:
+[INFO  - 2014-05-11T06:52:55.663Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2014-05-11T06:53:10.252Z] Session [2dc1ad90-d8d8-11e3-b872-1d65a2e9c40d] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'this.MV.cid')
+[ERROR - 2014-05-11T06:53:10.253Z] Session [2dc1ad90-d8d8-11e3-b872-1d65a2e9c40d] - page.onError - stack:
   (anonymous function) (http://d1n1frcxojl8er.cloudfront.net/976_cbr.js:2)
   (anonymous function) (http://d1n1frcxojl8er.cloudfront.net/976_cbr.js:24)
-[ERROR - 2014-05-10T20:20:22.174Z] Session [aecccb30-d87f-11e3-a08e-9b3ec76076b6] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'this.MV.cid')
-[ERROR - 2014-05-10T20:20:22.175Z] Session [aecccb30-d87f-11e3-a08e-9b3ec76076b6] - page.onError - stack:
+[ERROR - 2014-05-11T06:53:43.191Z] Session [2dc1ad90-d8d8-11e3-b872-1d65a2e9c40d] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'this.MV.cid')
+[ERROR - 2014-05-11T06:53:43.192Z] Session [2dc1ad90-d8d8-11e3-b872-1d65a2e9c40d] - page.onError - stack:
   (anonymous function) (http://d1n1frcxojl8er.cloudfront.net/976_cbr.js:2)
   (anonymous function) (http://d1n1frcxojl8er.cloudfront.net/976_cbr.js:24)
-[ERROR - 2014-05-10T20:21:05.087Z] Session [aecccb30-d87f-11e3-a08e-9b3ec76076b6] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'this.MV.cid')
-[ERROR - 2014-05-10T20:21:05.087Z] Session [aecccb30-d87f-11e3-a08e-9b3ec76076b6] - page.onError - stack:
+[ERROR - 2014-05-11T06:57:15.613Z] Session [2dc1ad90-d8d8-11e3-b872-1d65a2e9c40d] - page.onError - msg: SyntaxError: Parse error
+[ERROR - 2014-05-11T06:57:15.613Z] Session [2dc1ad90-d8d8-11e3-b872-1d65a2e9c40d] - page.onError - stack:
+
+[ERROR - 2014-05-11T06:57:16.019Z] Session [2dc1ad90-d8d8-11e3-b872-1d65a2e9c40d] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'this.MV.cid')
+[ERROR - 2014-05-11T06:57:16.019Z] Session [2dc1ad90-d8d8-11e3-b872-1d65a2e9c40d] - page.onError - stack:
   (anonymous function) (http://d1n1frcxojl8er.cloudfront.net/976_cbr.js:2)
   (anonymous function) (http://d1n1frcxojl8er.cloudfront.net/976_cbr.js:24)
-[ERROR - 2014-05-10T20:21:46.808Z] Session [aecccb30-d87f-11e3-a08e-9b3ec76076b6] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'this.MV.cid')
-[ERROR - 2014-05-10T20:21:46.808Z] Session [aecccb30-d87f-11e3-a08e-9b3ec76076b6] - page.onError - stack:
+[INFO  - 2014-05-11T06:57:55.669Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2014-05-11T06:58:09.082Z] Session [2dc1ad90-d8d8-11e3-b872-1d65a2e9c40d] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'this.MV.cid')
+[ERROR - 2014-05-11T06:58:09.082Z] Session [2dc1ad90-d8d8-11e3-b872-1d65a2e9c40d] - page.onError - stack:
   (anonymous function) (http://d1n1frcxojl8er.cloudfront.net/976_cbr.js:2)
   (anonymous function) (http://d1n1frcxojl8er.cloudfront.net/976_cbr.js:24)
-[ERROR - 2014-05-10T20:22:24.735Z] Session [aecccb30-d87f-11e3-a08e-9b3ec76076b6] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'this.MV.cid')
-[ERROR - 2014-05-10T20:22:24.736Z] Session [aecccb30-d87f-11e3-a08e-9b3ec76076b6] - page.onError - stack:
+[ERROR - 2014-05-11T06:58:53.923Z] Session [2dc1ad90-d8d8-11e3-b872-1d65a2e9c40d] - page.onError - msg: SyntaxError: Parse error
+[ERROR - 2014-05-11T06:58:53.923Z] Session [2dc1ad90-d8d8-11e3-b872-1d65a2e9c40d] - page.onError - stack:
+
+[ERROR - 2014-05-11T06:58:54.255Z] Session [2dc1ad90-d8d8-11e3-b872-1d65a2e9c40d] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'this.MV.cid')
+[ERROR - 2014-05-11T06:58:54.256Z] Session [2dc1ad90-d8d8-11e3-b872-1d65a2e9c40d] - page.onError - stack:
   (anonymous function) (http://d1n1frcxojl8er.cloudfront.net/976_cbr.js:2)
   (anonymous function) (http://d1n1frcxojl8er.cloudfront.net/976_cbr.js:24)
-[ERROR - 2014-05-10T20:23:03.518Z] Session [aecccb30-d87f-11e3-a08e-9b3ec76076b6] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'this.MV.cid')
-[ERROR - 2014-05-10T20:23:03.518Z] Session [aecccb30-d87f-11e3-a08e-9b3ec76076b6] - page.onError - stack:
+[ERROR - 2014-05-11T06:59:38.315Z] Session [2dc1ad90-d8d8-11e3-b872-1d65a2e9c40d] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'this.MV.cid')
+[ERROR - 2014-05-11T06:59:38.315Z] Session [2dc1ad90-d8d8-11e3-b872-1d65a2e9c40d] - page.onError - stack:
   (anonymous function) (http://d1n1frcxojl8er.cloudfront.net/976_cbr.js:2)
   (anonymous function) (http://d1n1frcxojl8er.cloudfront.net/976_cbr.js:24)
-[ERROR - 2014-05-10T20:23:40.063Z] Session [aecccb30-d87f-11e3-a08e-9b3ec76076b6] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'this.MV.cid')
-[ERROR - 2014-05-10T20:23:40.063Z] Session [aecccb30-d87f-11e3-a08e-9b3ec76076b6] - page.onError - stack:
+[ERROR - 2014-05-11T07:00:15.445Z] Session [2dc1ad90-d8d8-11e3-b872-1d65a2e9c40d] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'this.MV.cid')
+[ERROR - 2014-05-11T07:00:15.446Z] Session [2dc1ad90-d8d8-11e3-b872-1d65a2e9c40d] - page.onError - stack:
   (anonymous function) (http://d1n1frcxojl8er.cloudfront.net/976_cbr.js:2)
   (anonymous function) (http://d1n1frcxojl8er.cloudfront.net/976_cbr.js:24)
-[ERROR - 2014-05-10T20:24:19.980Z] Session [aecccb30-d87f-11e3-a08e-9b3ec76076b6] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'this.MV.cid')
-[ERROR - 2014-05-10T20:24:19.980Z] Session [aecccb30-d87f-11e3-a08e-9b3ec76076b6] - page.onError - stack:
+[ERROR - 2014-05-11T07:00:49.791Z] Session [2dc1ad90-d8d8-11e3-b872-1d65a2e9c40d] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'this.MV.cid')
+[ERROR - 2014-05-11T07:00:49.792Z] Session [2dc1ad90-d8d8-11e3-b872-1d65a2e9c40d] - page.onError - stack:
   (anonymous function) (http://d1n1frcxojl8er.cloudfront.net/976_cbr.js:2)
   (anonymous function) (http://d1n1frcxojl8er.cloudfront.net/976_cbr.js:24)
-[INFO  - 2014-05-10T20:24:25.215Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[ERROR - 2014-05-10T20:25:04.859Z] Session [aecccb30-d87f-11e3-a08e-9b3ec76076b6] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'this.MV.cid')
-[ERROR - 2014-05-10T20:25:04.859Z] Session [aecccb30-d87f-11e3-a08e-9b3ec76076b6] - page.onError - stack:
+[ERROR - 2014-05-11T07:01:23.896Z] Session [2dc1ad90-d8d8-11e3-b872-1d65a2e9c40d] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'this.MV.cid')
+[ERROR - 2014-05-11T07:01:23.896Z] Session [2dc1ad90-d8d8-11e3-b872-1d65a2e9c40d] - page.onError - stack:
   (anonymous function) (http://d1n1frcxojl8er.cloudfront.net/976_cbr.js:2)
   (anonymous function) (http://d1n1frcxojl8er.cloudfront.net/976_cbr.js:24)
-[ERROR - 2014-05-10T20:25:48.523Z] Session [aecccb30-d87f-11e3-a08e-9b3ec76076b6] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'this.MV.cid')
-[ERROR - 2014-05-10T20:25:48.524Z] Session [aecccb30-d87f-11e3-a08e-9b3ec76076b6] - page.onError - stack:
+[ERROR - 2014-05-11T07:01:59.277Z] Session [2dc1ad90-d8d8-11e3-b872-1d65a2e9c40d] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'this.MV.cid')
+[ERROR - 2014-05-11T07:01:59.277Z] Session [2dc1ad90-d8d8-11e3-b872-1d65a2e9c40d] - page.onError - stack:
   (anonymous function) (http://d1n1frcxojl8er.cloudfront.net/976_cbr.js:2)
   (anonymous function) (http://d1n1frcxojl8er.cloudfront.net/976_cbr.js:24)
-[ERROR - 2014-05-10T20:26:27.592Z] Session [aecccb30-d87f-11e3-a08e-9b3ec76076b6] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'this.MV.cid')
-[ERROR - 2014-05-10T20:26:27.593Z] Session [aecccb30-d87f-11e3-a08e-9b3ec76076b6] - page.onError - stack:
+[ERROR - 2014-05-11T07:02:36.964Z] Session [2dc1ad90-d8d8-11e3-b872-1d65a2e9c40d] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'this.MV.cid')
+[ERROR - 2014-05-11T07:02:36.964Z] Session [2dc1ad90-d8d8-11e3-b872-1d65a2e9c40d] - page.onError - stack:
   (anonymous function) (http://d1n1frcxojl8er.cloudfront.net/976_cbr.js:2)
   (anonymous function) (http://d1n1frcxojl8er.cloudfront.net/976_cbr.js:24)

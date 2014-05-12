@@ -10,9 +10,9 @@ class TestSequenceFunctions(unittest.TestCase):
         self.browser = Browser('phantomjs')
         #self.address = os.environ['recipient']
         self.location = 'SOF'
-        self.destination = ['VIE', 'LON', 'ROM', 'PAR', 'MAD', 'BER']
-        self.departure = [13, 20, 27]
-        self.returns = ['08/06/2014', '15/06/2014', '22/06/2014', '29/06/2014'] 
+        self.destination = 'VIE'
+        self.departure = '06/06/2014'
+        self.returns = '08/06/2014'
         self.max_price = 130
         self.mail_url = 'http://m.abv.bg'
         self.user = 'nullman'
@@ -37,46 +37,39 @@ class TestSequenceFunctions(unittest.TestCase):
         
         browser.visit(self.url)
         self.make_screenshot()
-        
+
         browser.find_by_name('dep').type(self.location)
         self.make_screenshot()
-
-        for dest in self.destination:  
-            for dep in self.departure:
-                browser.find_by_name('arr').type(str(dest))
-                self.make_screenshot()        
-                    
-                browser.find_by_id('obDate').fill(str(dep)+'/06/2014')
-                self.make_screenshot()     
-
-                browser.find_by_id('ibDate').fill(str(dep+2)+'/06/2014')
-                self.make_screenshot()
-
-                browser.find_by_css('button.btn-primary').click()
-                self.make_screenshot()  
-
-                time.sleep(10)
-                self.make_screenshot() 
-
-                price = browser.find_by_css('span.amount').first.text[1:]
-                price = float(price)
-                    
-                if price<=self.max_price:     
-                    self.send_price_email( self.get_price_details(browser, price) )   
-                    
-            def get_price_details(self, browser, price):
-                time_departure = browser.find_by_css('td.depart span.cursor_default').first.text
-                time_arrival = browser.find_by_css('td.arrive span.cursor_default').first.text
-                self.make_screenshot() 
-                #browser.find_by_id('form-flights-result-0')
-            
-                message = 'Flight from %s  to %s  Departure on %s at %s Arrive at %s Lowest price %s \n.' %(self.location, self.destination, self.departure, time_departure, time_arrival, price)
-            
-                return message
         
-    def send_price_email(self, message):
-        browser = self.browser        
-                        
+        browser.find_by_name('arr').type(self.destination)
+        self.make_screenshot()        
+		
+        browser.find_by_id('obDate').fill(self.departure)
+        self.make_screenshot()     
+
+        browser.find_by_id('ibDate').fill(self.returns)
+        self.make_screenshot()
+
+        #browser.check('extendedDates')
+        #self.make_screenshot()   
+
+        browser.find_by_css('button.btn-primary').click()
+        self.make_screenshot()  
+
+        time.sleep(10)
+        self.make_screenshot() 
+
+        price = browser.find_by_css('span.amount').first.text[1:]
+        self.make_screenshot() 
+                
+        time_departure = browser.find_by_css('td.depart span.cursor_default').first.text
+        time_arrival = browser.find_by_css('td.arrive span.cursor_default').first.text
+                
+        message = 'Flight from %s  to %s  Departure on %s at %s Arrive at %s Lowest price %s' %(self.location, self.destination, self.departure, time_departure, time_arrival, price)
+        
+        browser.find_by_id('form-flights-result-0')
+        #print self.message
+        
         browser.visit(self.mail_url)
         self.make_screenshot()
 
@@ -105,7 +98,7 @@ class TestSequenceFunctions(unittest.TestCase):
         self.make_screenshot()	
 
         browser.find_by_name('SENDMESSAGE_SEND').click()
-        self.make_screenshot()	
+        self.make_screenshot()		
         
 if __name__ == '__main__':
     unittest.main()
